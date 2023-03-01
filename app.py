@@ -7,10 +7,10 @@ import pickle
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 # load the model 
-naive_bayes_model = pickle.load(open('naive_bayes_model.pkl', 'rb'))
-logistic_regression_model = pickle.load(open('logistic_regression_model.pkl', 'rb'))
-cv_naive=pickle.load(open('tranform_naive.pkl','rb'))
-cv_logistic=pickle.load(open('tranform_logistic.pkl','rb'))
+naive_bayes_model = pickle.load(open('ibm_naive_bayes_model.pkl', 'rb'))
+logistic_regression_model = pickle.load(open('ibm_logistic_regression_model.pkl', 'rb'))
+cv_naive=pickle.load(open('ibm_transform_naive.pkl','rb'))
+cv_logistic=pickle.load(open('ibm_tranform_logistic.pkl','rb'))
 
 app = Flask(__name__)
 
